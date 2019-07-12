@@ -33,7 +33,7 @@ const userSchema = new mongoose.Schema({
 
 });
 
-module.exports = mongoose.model('ahmad', userSchema);
+module.exports = mongoose.model('user', userSchema);
 
 ```
 
