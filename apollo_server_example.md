@@ -45,11 +45,11 @@ https://www.youtube.com/watch?v=DyvsMKsEsyE&list=PLN3n1USn4xln0j_NN9k4j5hS1thsGi
 
 const { ApolloServer, gql } = require("apollo-server");
 
-const typeDefs = gql`
+const typeDefs = gql\`
   type Query {
     hello: String!
   }
-`;
+\`;
 
 const resolvers = {
   Query: {
