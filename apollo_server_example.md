@@ -137,4 +137,28 @@ const server = new ApolloServer({ typeDefs, resolvers });
 
 server.listen().then(({ url }) => console.log(`server started at ${url}`));
 
+
+
+// query{
+//     hello
+//     user{
+//       id
+//       username
+//     }
+//   }
+  
+//   mutation {
+//     register(userInfo: { username: "shbeta", password: "12345" }) {
+//       errors {
+//         field
+//         message
+//       }
+//       user {
+//         id
+//         username
+//       }
+//     }
+//     login(userInfo:{username:"shbeta", password:"12345"})
+//   }
+
 ```
