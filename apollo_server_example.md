@@ -1,5 +1,5 @@
 ### example 1
-`
+```
 const {ApolloServer, gql} = require("apollo-server");
 
 
@@ -38,11 +38,11 @@ server.listen().then(({url}) => {
     console.log(\`server listening on ${url}\`);
 });
 
-`
+```
 
 ### example 2
 https://www.youtube.com/watch?v=DyvsMKsEsyE&list=PLN3n1USn4xln0j_NN9k4j5hS1thsGibKi&index=1&ab_channel=BenAwad
-`
+```
 const { ApolloServer, gql } = require("apollo-server");
 
 const typeDefs = gql\`
@@ -60,4 +60,4 @@ const resolvers = {
 const server = new ApolloServer({ typeDefs, resolvers });
 
 server.listen().then(({ url }) => console.log(\`server started at ${url}\`));
-`
+```
