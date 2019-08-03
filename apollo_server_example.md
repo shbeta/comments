@@ -41,6 +41,8 @@ server.listen().then(({url}) => {
 
 
 ### example 2
+https://www.youtube.com/watch?v=DyvsMKsEsyE&list=PLN3n1USn4xln0j_NN9k4j5hS1thsGibKi&index=1&ab_channel=BenAwad
+
 const { ApolloServer, gql } = require("apollo-server");
 
 const typeDefs = gql`
