@@ -9,7 +9,7 @@ const todos=[
 ];
 
 
-const typeDefs = gql\`
+const typeDefs = gql`
 
     type Todo {
         task: String
@@ -20,7 +20,7 @@ const typeDefs = gql\`
     type Query {
     getTodos: [Todo]
   }
-\`;
+`;
 
 const resolvers= {
     Query:{
@@ -35,7 +35,7 @@ const server = new ApolloServer({
 });
 
 server.listen().then(({url}) => {
-    console.log(\`server listening on ${url}\`);
+    console.log(`server listening on ${url}`);
 });
 
 ```
@@ -45,11 +45,11 @@ https://www.youtube.com/watch?v=DyvsMKsEsyE&list=PLN3n1USn4xln0j_NN9k4j5hS1thsGi
 ```
 const { ApolloServer, gql } = require("apollo-server");
 
-const typeDefs = gql\`
+const typeDefs = gql`
   type Query {
     hello: String!
   }
-\`;
+`;
 
 const resolvers = {
   Query: {
@@ -59,5 +59,5 @@ const resolvers = {
 
 const server = new ApolloServer({ typeDefs, resolvers });
 
-server.listen().then(({ url }) => console.log(\`server started at ${url}\`));
+server.listen().then(({ url }) => console.log(`server started at ${url}`));
 ```
