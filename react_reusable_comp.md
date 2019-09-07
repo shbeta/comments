@@ -14,6 +14,7 @@ const SimpleFormHooks = () => {
         <div>
             <h1>the value is {email}</h1>
             <input type="text" value={email} onChange={handleChange}></input>
+            <button onClick={()=> setEmail("")}>Submit</button>
         </div>
      );
 }
