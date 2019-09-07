@@ -1,4 +1,4 @@
-### example 1
+### example 1 (without reusable components)
 using hooks without re-usable method
 
 ### SimpleFormHooks
@@ -20,6 +20,10 @@ const SimpleFormHooks = () => {
  
 export default SimpleFormHooks;
 ```
+
+
+### example 1 (with reusable components)
+
 
 
 
