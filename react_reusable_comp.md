@@ -25,10 +25,42 @@ export default SimpleFormHooks;
 
 ### example 1 (with reusable components)
 
+### SimpleFormHooksReuse
+```
+import React, {useState} from 'react';
+import useFormState from './hooks/useFormState';
 
 
+const SimpleFormHooksReuse = () => {
+    const [email, emailChange, emailReset]= useFormState("");
+    return ( 
+        <div>
+            <h1>the value is {email}</h1>
+            <input type="text" value={email} onChange={emailChange}></input>
+            <button onClick={emailReset}>Submit</button>
+        </div>
+     );
+}
+ 
+export default SimpleFormHooksReuse;
+```
 
+### useFormState
+```
+import React, {useState} from 'react';
 
+const useFormState = (initialVal) => {
+    const [value, setValue]= useState(initialVal);
+    const handleChange = e => {
+        setValue(e.target.value);
+    };
+    const reset =() =>{
+        setValue("");
+    }
+    return [value, handleChange, reset] ;
+}
+export default useFormState;
+```
 -------------------------------------------------
 
 
