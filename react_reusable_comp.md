@@ -30,6 +30,9 @@ export default SimpleFormHooks;
 
 -------------------------------------------------
 
+
+### example 2 (with reusable components)
+
 ### TodoApp.js
 
 ```
