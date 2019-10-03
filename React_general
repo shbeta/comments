@@ -1,4 +1,4 @@
-how to use axios
+### how to use axios
 ````````````
 useEffect( () => {
     async function fetchData() {
