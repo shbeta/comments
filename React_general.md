@@ -1,4 +1,6 @@
 ### how to use axios
+
+### first method to use axios
 ````````````
 useEffect( () => {
     async function fetchData() {
@@ -20,7 +22,7 @@ useEffect( () => {
   
   `````````````````````
 
-### second method
+### second method to use axios
 
 ````````````````
   useEffect( () => {
