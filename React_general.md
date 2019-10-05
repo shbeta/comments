@@ -25,13 +25,15 @@ useEffect( () => {
 ### second method to use axios
 
 ````````````````
+  // method 2
   useEffect( () => {
     async function fetchData() {
-      let token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWQ5MGFjMzlhMWUwMjMwNmFjOTcxNmRjIn0sImlhdCI6MTU3MDEyNzkxNCwiZXhwIjoxNTcwNDg3OTE0fQ.qhBdPAzezlYEcmwYdbD6yY-BalciNlZQHjdvSbfAJBg';
-      var result = await axios.get('/api/auth',{
-      params: {"email": "ccc@gmail.com", "password": "1234567" },
-      headers: { "x-auth-token": token}  
-      })
+      // let token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWQ5MGFjMzlhMWUwMjMwNmFjOTcxNmRjIn0sImlhdCI6MTU3MDEyNzkxNCwiZXhwIjoxNTcwNDg3OTE0fQ.qhBdPAzezlYEcmwYdbD6yY-BalciNlZQHjdvSbfAJBg';
+      
+      var result = await axios.post('/api/auth',
+        {"email": "bbb@gmail.com", "password": "1234567" },
+        { "Content-Type": "application/json"}
+      )
 
       setData(result);
       console.log(result)
