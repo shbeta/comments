@@ -1,7 +1,7 @@
 ### how to use axios
 
 ### first method to use axios
-````````````
+```
 useEffect( () => {
     async function fetchData() {
       let token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWQ5MGFlMzY1ZTMzYTU1NTVjYWYwYjZlIn0sImlhdCI6MTU2OTc2NzU1NSwiZXhwIjoxNTcwMTI3NTU1fQ.sTaoAMFu7_XRWtyV9URAprGd_Mm6RWXzP8xBwy6pbSA';
@@ -20,11 +20,11 @@ useEffect( () => {
     fetchData();
   },[])
   
-  `````````````````````
+  ```
 
 ### second method to use axios
 
-````````````````
+```
   // method 2
   useEffect( () => {
     async function fetchData() {
@@ -41,10 +41,10 @@ useEffect( () => {
     fetchData();
   },[])
   
-````````````````
+```
 ### method 3
 
-`````````````````
+```
 useEffect( () => {
     async function fetchData() {
       // let token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWQ5MGFjMzlhMWUwMjMwNmFjOTcxNmRjIn0sImlhdCI6MTU3MDEyNzkxNCwiZXhwIjoxNTcwNDg3OTE0fQ.qhBdPAzezlYEcmwYdbD6yY-BalciNlZQHjdvSbfAJBg';
@@ -60,4 +60,5 @@ useEffect( () => {
     }
     fetchData();
   },[])
-``````````
+  
+```
